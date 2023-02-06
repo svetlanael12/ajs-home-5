@@ -26,7 +26,7 @@ export default class Character {
 
   set type(value) {
     const types = ['Bowman', 'Swordsman', 'Magician', 'Daemon', 'Undead', 'Zombie'];
-    if (types.some((type) => type === value)) {
+    if (types.includes(value)) {
       this._type = value;
       return this._type;
     }

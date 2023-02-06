@@ -1,4 +1,4 @@
-import Character from '../classCharacter';
+import Character from '../character';
 
 test('Check class Character error long name', () => {
   expect(() => { new Character('Путешественник', 'Swor'); }).toThrowError('Имя слишком длинное.');
